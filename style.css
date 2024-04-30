@@ -1,0 +1,74 @@
+@font-face {
+  font-family: WorkSans;
+  src: url(assets/fonts/static/WorkSans-Regular.ttf);
+}
+@font-face {
+  font-family: WorkSans-Bold;
+  src: url(assets/fonts/static/WorkSans-Bold.ttf);
+}
+
+body{
+  font-family: WorkSans,sans-serif;
+  background-color: blueviolet;
+}
+
+.container{
+  width: 400px;
+  background-color:aliceblue;
+  border-radius: 5%;
+  margin: 50px auto;
+  padding: 30px 25px;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+}
+
+.title h1{
+  margin-left: 20px;
+  color: hsl(292, 42%, 14%);
+  font-family: WorkSans-Bold,sans-serif;
+}
+
+.faq-list{
+  list-style-type: none;
+}
+
+.faq-question{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-family: WorkSans-Bold,sans-serif;
+  color: hsl(292, 42%, 14%);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.toggle-button{
+  background-color: hsl(293, 100%, 64%);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.faq-answer{
+  word-wrap: break-word;
+  display: none;
+}
+
+h5{
+  font-family: WorkSans,sans-serif;
+}
+h5:hover{
+  color: rgb(225, 0, 255)
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+}
